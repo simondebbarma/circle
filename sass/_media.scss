@@ -1,0 +1,45 @@
+@mixin image-cover {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.image-cover {
+  @include image-cover();
+}
+
+.image-cover-center {
+  @include image-cover();
+
+  object-position: center;
+}
+
+.image-cover-left {
+  @include image-cover();
+
+  object-position: left;
+}
+
+.image-cover-right {
+  @include image-cover();
+
+  object-position: right;
+}
+
+.image-cover-center-top {
+  @include image-cover();
+
+  object-position: top;
+}
+
+.image-cover-bottom {
+  @include image-cover();
+
+  object-position: bottom;
+}
+
+.image-span {
+  grid-column: 1/-1;
+  height: 100%;
+  object-fit: cover;
+}

@@ -1,0 +1,53 @@
+.no-decoration {
+  text-decoration: none;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.underline-red {
+  @extend .underline;
+
+  text-decoration-color: red;
+}
+
+.underline-black {
+  @extend .underline;
+
+  text-decoration-color: black;
+}
+
+.underline-nohover {
+  @extend .underline;
+
+  &:hover {
+    @extend .no-decoration;
+  }
+}
+
+.hover-underline {
+  @extend .no-decoration;
+
+  &:hover {
+    color: inherit;
+
+    @extend .underline;
+  }
+}
+
+.hover-underline-red {
+  @extend .hover-underline;
+
+  &:hover {
+    @extend .underline-red;
+  }
+}
+
+.hover-underline-black {
+  @extend .hover-underline;
+
+  &:hover {
+    @extend .underline-black;
+  }
+}

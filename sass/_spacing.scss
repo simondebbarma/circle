@@ -1,0 +1,163 @@
+@use 'layouts/grid';
+
+$spacing: 0.5;
+
+.m-auto {
+  margin: auto;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+@for $i from 0 through 5 {
+  .gg-#{$i} {
+    gap: $i*$spacing*1rem;
+  }
+
+  .cg-#{$i} {
+    column-gap: $i*$spacing*1rem;
+  }
+
+  .rg-#{$i} {
+    row-gap: $i*$spacing*1rem;
+  }
+
+  .p-#{$i} {
+    padding: $i*$spacing*1rem;
+  }
+
+  .px-#{$i} {
+    padding-left: $i*$spacing*1rem;
+    padding-right: $i*$spacing*1rem;
+  }
+
+  .py-#{$i} {
+    padding-top: $i*$spacing*1rem;
+    padding-bottom: $i*$spacing*1rem;
+  }
+
+  .pt-#{$i} {
+    padding-top: $i*$spacing*1rem;
+  }
+
+  .pr-#{$i} {
+    padding-right: $i*$spacing*1rem;
+  }
+
+  .pb-#{$i} {
+    padding-bottom: $i*$spacing*1rem;
+  }
+
+  .pl-#{$i} {
+    padding-left: $i*$spacing*1rem;
+  }
+
+  .m-#{$i} {
+    margin: $i*$spacing*1rem;
+  }
+
+  .mx-#{$i} {
+    margin-left: $i*$spacing*1rem;
+    margin-right: $i*$spacing*1rem;
+  }
+
+  .my-#{$i} {
+    margin-top: $i*$spacing*1rem;
+    margin-bottom: $i*$spacing*1rem;
+  }
+
+  .mt-#{$i} {
+    margin-top: $i*$spacing*1rem;
+  }
+
+  .mr-#{$i} {
+    margin-right: $i*$spacing*1rem;
+  }
+
+  .mb-#{$i} {
+    margin-bottom: $i*$spacing*1rem;
+  }
+
+  .ml-#{$i} {
+    margin-left: $i*$spacing*1rem;
+  }
+
+  .m-n#{$i} {
+    margin: -$i*$spacing*1rem;
+  }
+
+  .mx-n#{$i} {
+    margin-left: -$i*$spacing*1rem;
+    margin-right: -$i*$spacing*1rem;
+  }
+
+  .my-n#{$i} {
+    margin-top: -$i*$spacing*1rem;
+    margin-bottom: -$i*$spacing*1rem;
+  }
+
+  .mt-n#{$i} {
+    margin-top: -$i*$spacing*1rem;
+  }
+
+  .mr-n#{$i} {
+    margin-right: -$i*$spacing*1rem;
+  }
+
+  .mb-n#{$i} {
+    margin-bottom: -$i*$spacing*1rem;
+  }
+
+  .ml-n#{$i} {
+    margin-left: -$i*$spacing*1rem;
+  }
+}
+
+@for $i from 0 through 250 {
+  .h#{$i} {
+    height: #{$i}px;
+  }
+
+  .w#{$i} {
+    width: #{$i}px;
+  }
+}
+
+@media screen and (min-width: $break-medium) {
+  .m-md-auto {
+    margin: auto;
+  }
+
+  .mx-md-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .my-md-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+@media screen and (min-width: $break-large) {
+  .m-lg-auto {
+    margin: auto;
+  }
+
+  .mx-lg-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .my-lg-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}

@@ -1,0 +1,54 @@
+@mixin nav-grid {
+  display: grid;
+  padding: 5px;
+}
+
+@for $i from 1 through 40 {
+  .nav-#{$i} {
+    @include nav-grid();
+
+    grid-template-columns: repeat(#{$i}, minmax(max-content, 1fr));
+  }
+}
+
+.nav-grid-item {
+  text-align: center;
+  padding: 5px;
+}
+
+.nav-grid-item-right {
+  order: 2;
+  text-align: center;
+  padding: 5px;
+}
+
+.border-left {
+  border-left: 1px solid lightgrey;
+}
+
+.border-right {
+  border-right: 1px solid lightgrey;
+}
+
+.nav-flex {
+  display: flex;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.nav-flex-item {
+  padding: 5px;
+}
+
+.nav-flex-item-right {
+  padding: 5px;
+  float: right;
+}
+
+.no-shrink {
+  min-width: max-content;
+}
+
+.rounded {
+  border-radius: 50px;
+}

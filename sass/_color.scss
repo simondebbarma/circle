@@ -1,0 +1,31 @@
+// #region Colors
+
+$og-red: rgb(185, 24, 24);
+$og-blue: rgb(0, 102, 236);
+$og-green:rgb(28, 236, 0);
+$og-white: white;
+$og-black: rgb(12, 12, 12);
+
+.background-green {
+  background-color: $og-green;
+}
+
+.background-red {
+  background-color: $og-red;
+}
+
+.background-blue {
+  background-color: $og-blue;
+}
+
+.background-white {
+  background-color: $og-white;
+}
+
+// #endregion Colors
+
+.overlay-greydient {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,34 @@
+{
+  "name": "circle",
+  "version": "0.1.0",
+  "description": "HTML/CSS Capstone Project for Microverse",
+  "main": "index.js",
+  "scripts": {
+    "start": "run-script-os",
+    "start:win32": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777 --browser \"C:\\Program Files\\Firefox Developer Edition\\firefox.exe\"",
+    "//": "Hello! If you are having trouble running this command. Try changing Firefox Developer Edition to FirefoxDeveloperEdition",
+    "start:darwin:linux": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 3000 --browser 'Firefox'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simonpeterdebbarma/circle.git"
+  },
+  "author": "Simon Debbarma",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/simonpeterdebbarma/outgrid/issues"
+  },
+  "homepage": "https://github.com/simonpeterdebbarma/outgrid#readme",
+  "devDependencies": {
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-sass": "^4.0.2",
+    "stylelint": "^12.0.1",
+    "stylelint-config-recommended": "^3.0.0"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.7"
+  }
+}

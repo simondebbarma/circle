@@ -1,0 +1,63 @@
+@use "color";
+
+.heading1 {
+  font-size: 5.25vw;
+  font-weight: 700;
+}
+
+.heading2 {
+  font-size: 4.5vw;
+  font-weight: 700;
+}
+
+.heading3 {
+  font-size: 3.75vw;
+  font-weight: 700;
+}
+
+.heading4 {
+  font-size: 3vw;
+  font-weight: 700;
+}
+
+.heading5 {
+  font-size: 2.25vw;
+  font-weight: 700;
+}
+
+.heading6 {
+  font-size: 1.5vw;
+  font-weight: 700;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.bolder {
+  font-weight: bolder;
+}
+
+.text-white {
+  color: $og-white;
+}
+
+.text-green {
+  color: $og-green;
+}
+
+.text-red {
+  color: $og-red;
+}
+
+.text-blue {
+  color: $og-blue;
+}
+
+.text-black {
+  color: $og-black;
+}
