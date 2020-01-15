@@ -130,6 +130,16 @@ $spacing: 0.5;
   }
 }
 
+@for $i from 0 through 100 {
+  .h#{$i}vh {
+    height: #{$i}vh;
+  }
+
+  .w#{$i}vw {
+    width: #{$i}vw;
+  }
+}
+
 @media screen and (min-width: $break-medium) {
   .m-md-auto {
     margin: auto;

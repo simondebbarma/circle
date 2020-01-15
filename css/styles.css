@@ -1,0 +1,95 @@
+#login-page {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.login {
+    grid-template-columns: 2fr 1fr;
+    background-color: #4442fe;
+}
+
+.login-form-container {
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: #4442fe;
+    min-width: 360px;
+}
+
+.login-input-container {
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.login-input-container > input {
+    width: 80%;
+}
+
+.login-title {
+    font-size: 7rem;
+}
+
+.input-email {
+    background: url(../assets/icons/user.svg) no-repeat scroll 10px 50% ;
+    background-color: white;
+    padding-left:40px;
+}
+
+.input-password {
+    background: url(../assets/icons/lock.svg) no-repeat scroll 10px 50%;
+    background-color: white;
+    padding-left: 40px;
+}
+
+.login-input-container > button {
+    font-size: 20px;
+    background-color: #4442fe;
+    border-color: white;
+    color: white;
+}
+
+.knewave {
+    font-family: 'Knewave', cursive;
+}
+
+.text-orange {
+    color: #ff8b66;
+}
+
+.login-form-register {
+    position: relative;
+    overflow: hidden;
+}
+
+.login-form-register-bg {
+    border-radius: 100% 100% 0 0;
+    background-color: white;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: -60%;
+    z-index: 1;
+}
+
+.login-register-text {
+    z-index: 2;
+}
+
+.register-button {
+    border: none;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .login {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .login-title {
+        font-size: 6rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .login-form-container {
+        width: 100vw;
+        padding-right: 0;
+    }
+}
