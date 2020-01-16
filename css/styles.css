@@ -124,6 +124,7 @@ ul {
 #dashboard {
     font-family: 'Open Sans', sans-serif;
     height: 100vh;
+    overflow: hidden;
 }
 
 .nav-location > div {
