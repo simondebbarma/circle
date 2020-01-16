@@ -131,6 +131,16 @@ $spacing: 0.5;
 }
 
 @for $i from 0 through 100 {
+  .h-#{$i} {
+    height: calc(#{$i} * 1%);
+  }
+
+  .w-#{$i} {
+    width: calc(#{$i} * 1%);
+  }
+}
+
+@for $i from 0 through 100 {
   .h#{$i}vh {
     height: #{$i}vh;
   }

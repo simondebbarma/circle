@@ -1,3 +1,24 @@
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+
+a {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+  background-color: white;
+}
+
+
+
 #login-page {
     font-family: 'Open Sans', sans-serif;
 }
@@ -52,6 +73,10 @@
     color: #ff8b66;
 }
 
+.bg-orange {
+    background-color: #ff8b66;
+}
+
 .login-form-register {
     position: relative;
     overflow: hidden;
@@ -74,8 +99,8 @@
 .register-button {
     border: none;
     font-size: 1.5rem;
+    text-align: center;
 }
-
 
 @media screen and (max-width: 1024px) {
     .login {
@@ -92,5 +117,220 @@
     .login-form-container {
         width: 100vw;
         padding-right: 0;
+    }
+}
+
+/*----------  Dashboard  ----------*/
+
+#dashboard {
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+}
+
+.nav-location > div {
+    font-size: 1rem;
+}
+
+.dash-nav i {
+    font-size: 1.25rem;
+    color: rgb(187, 185, 185);
+}
+
+.nav-user-icon {
+    border-left: 1px rgb(185, 185, 185) solid;
+}
+
+.nav-location {
+    grid-template-columns: auto 1fr;
+}
+
+.text-blue {
+    color: #4442fe;
+}
+
+.bg-blue {
+    background-color: #4442fe;
+}
+
+.dashboard-title {
+    font-size: 3rem;
+}
+
+.fa-heart {
+    color: red;
+}
+
+.dashboard-container {
+    grid-template-columns: 1fr 3.5fr;
+    height: 90vh;
+    background-color: whitesmoke;
+}
+
+.profile-card-top {
+    grid-template-columns: 1fr 2fr auto;
+}
+
+.profile-card-bottom {
+    grid-template-columns: 1fr 2fr;
+}
+
+.profile-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.fa-sliders-h {
+    font-size: 1rem;
+}
+
+.profile-status {
+    font-size: 0.75rem;
+}
+
+.dashboard-aside-left {
+    grid-template-rows: auto 1fr;
+}
+
+.dashboard-options > a {
+    font-size: 1rem;
+}
+
+.dashboard-options > div {
+    font-size: 1rem;
+}
+
+.dashboard-options > span {
+    font-size: 1rem;
+}
+
+.profile-card {
+    grid-template-rows: 1fr auto;
+}
+
+.premium-button {
+    background-color: #4442fe !important; 
+    color: white !important;
+}
+
+.options-notification {
+    grid-template-columns: 1fr auto;
+}
+
+.dashboard-options {
+    grid-template-columns: 1fr 3fr;
+    color: grey;
+}
+
+.dashboard-profile-container {
+    grid-template-columns: 2fr 1fr;
+    height: 88vh;
+    grid-template-areas: 
+        'profile-swiper profile-details'
+        'profile-swiper profile-details';
+}
+
+.profile-swiper {
+    grid-area: profile-swiper;
+    grid-template-rows: 12.5% 87.5%;
+}
+
+.profile-details {
+    grid-area: profile-details;
+}
+
+.fa-ellipsis-v {
+    font-size: 1.2rem;
+}
+
+.profile-swiper-previews {
+    grid-template-columns: 1fr 0.5fr repeat(7, 1fr);
+}
+
+.profiles-hero {
+    position: relative;;
+}
+
+.profiles-hero-overlay {
+    position: absolute;
+}
+
+.gallery-arrows {
+    font-size: 1.5rem;
+    color: grey;
+    background-color: rgba(255, 255, 255, 0.699);
+}
+
+
+.gallery-choice {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.distance-overlay {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: white;
+}
+
+.location-distance {
+    font-size: 2rem;
+}
+
+.location-unit {
+    font-size: 1rem;
+}
+
+.overlay-current-picture {
+    color: white;
+}
+
+.profile-details {
+    grid-template-rows: auto auto 1fr;
+}
+
+
+/*----------  Dashboard Media Queries  ----------*/
+
+@media screen and (max-width: 1366px) {
+    .dashboard-container {
+        grid-template-columns: 1fr 3fr;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .dashboard-container {
+        grid-template-columns: 1fr;
+        height: auto;
+        padding: 0 !important;
+    }
+
+    .dash-nav {
+        display: none;
+    }
+
+    .dashboard-aside-left {
+        display: none;
+    }
+
+    .dashboard-profile-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+            'profile-swiper profile-swiper'
+            'profile-details profile-details';
+        height: auto;
+    }
+
+    .profile-swiper-previews {
+        display: none;
+    }
+
+    .p-2 {
+        padding: 0;
+    }
+
+    .profile-swiper {
+        grid-template-rows: auto;
+        height: 60vh;
     }
 }
