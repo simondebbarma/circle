@@ -322,6 +322,7 @@ ul {
 .dash-promo {
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr 1fr;
+  -webkit-box-align: center;
   align-items: center;
   border: 1px purple solid;
 }
@@ -443,6 +444,7 @@ ul {
 
 .inbox-search {
   height: 100px;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   font-size: 1.2rem;
@@ -509,6 +511,7 @@ ul {
 }
 
 .text-header {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   height: 70px;
@@ -524,6 +527,7 @@ ul {
 }
 
 .text-header-sm {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   height: 70px;
@@ -540,6 +544,7 @@ ul {
 }
 
 .input-message {
+  position: -webkit-sticky;
   position: sticky;
   bottom: 0;
   height: 70px;
