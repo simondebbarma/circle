@@ -24,12 +24,12 @@ ul {
 
 .login {
   grid-template-columns: 2fr 1fr;
-  background-color: #4442fe;
+  background-color: #4243fe;
 }
 
 .login-form-container {
   grid-template-rows: 1fr 1fr 1fr;
-  background-color: #4442fe;
+  background-color: #4243fe;
   min-width: 360px;
 }
 
@@ -46,20 +46,20 @@ ul {
 }
 
 .input-email {
-  background: url(../assets/icons/user.svg) no-repeat scroll 20px 50%;
+  background: url(../../assets/icons/user.svg) no-repeat scroll 20px 50%;
   background-color: white;
   padding-left: 60px;
 }
 
 .input-password {
-  background: url(../assets/icons/lock.svg) no-repeat scroll 20px 50%;
+  background: url(../../assets/icons/lock.svg) no-repeat scroll 20px 50%;
   background-color: white;
   padding-left: 60px;
 }
 
 .login-button {
   font-size: 20px;
-  background-color: #4442fe;
+  background-color: #4243fe;
   border-color: whitesmoke;
   color: white;
 }
@@ -69,11 +69,11 @@ ul {
 }
 
 .text-orange {
-  color: #ff8b66;
+  color: #f0916e;
 }
 
 .bg-orange {
-  background-color: #ff8b66;
+  background-color: #f0916e;
 }
 
 .login-form-register {
@@ -144,11 +144,11 @@ ul {
 }
 
 .text-blue {
-  color: #4442fe;
+  color: #4e50b8;
 }
 
 .bg-blue {
-  background-color: #4442fe;
+  background-color: #4e50b8;
 }
 
 .dashboard-title {
@@ -190,6 +190,10 @@ ul {
   grid-template-rows: auto 1fr;
 }
 
+.dashboard-options-container {
+  height: 95%;
+}
+
 .dashboard-options > a {
   font-size: 1rem;
 }
@@ -207,7 +211,7 @@ ul {
 }
 
 .premium-button {
-  background-color: #4442fe !important;
+  background-color: #4e50b8 !important;
   color: white !important;
 }
 
@@ -217,7 +221,7 @@ ul {
 
 .dashboard-options {
   grid-template-columns: 1fr 3fr;
-  color: grey;
+  color: #414464;
 }
 
 .dashboard-profile-container {
@@ -258,7 +262,7 @@ ul {
 
 .gallery-arrows {
   font-size: 1.5rem;
-  color: grey;
+  color: #414464;
   background-color: rgba(255, 255, 255, 0.699);
 }
 
@@ -291,12 +295,12 @@ ul {
 
 .profile-detail-you-get {
   font-size: 1.5rem;
-  color: #4442fe;
+  color: #4e50b8;
 }
 
 .profile-subdetail {
   font-size: 0.75rem;
-  color: grey;
+  color: #414464;
   padding-top: 10px;
 }
 
@@ -371,6 +375,11 @@ ul {
       'profile-swiper profile-swiper'
       'profile-details profile-details';
     height: auto;
+    grid-template-rows: 1fr auto;
+  }
+
+  .profiles-hero {
+    height: 70vh !important;
   }
 
   .profile-swiper-previews {
@@ -489,7 +498,7 @@ ul {
 
 .inbox-list-message-preview {
   font-size: 0.8rem;
-  color: grey;
+  color: #414464;
 }
 
 .compose-icon-inbox {
