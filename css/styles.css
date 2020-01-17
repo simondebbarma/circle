@@ -358,6 +358,10 @@ ul {
         padding: 0 !important;
     }
 
+    #dashboard {
+        overflow-y: visible;
+    }
+
     .dash-nav {
         display: none;
     }
@@ -604,6 +608,10 @@ ul {
 /*----------  Media Queries for Messages  ----------*/
 
 @media screen and (max-width: 1024px) {
+    .mobile-nav {
+        display: grid;
+        height: 10vh;
+    }
     .text-mobile-nav {
         display: grid;
         height: 10vh;
