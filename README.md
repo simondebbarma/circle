@@ -4,7 +4,11 @@
 
 ---
 
-<img src="https://media.giphy.com/media/26gstMoYksEdQRRC0/giphy.gif" width="100%">
+#Screenshots
+
+<img src="https://i.imgur.com/YEiCZNn.png" width="100%">
+<img src="https://i.imgur.com/HZu0FZe.png" width="100%">
+<img src="https://i.imgur.com/WroFT5A.png" width="100%">
 
 ---
 
