@@ -1,0 +1,660 @@
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+  background-color: white;
+}
+
+#login-page {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.login {
+  grid-template-columns: 2fr 1fr;
+  background-color: #4243fe;
+}
+
+.login-form-container {
+  grid-template-rows: 1fr 1fr 1fr;
+  background-color: #4243fe;
+  min-width: 360px;
+}
+
+.login-input-container {
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.login-input-container > input {
+  width: 80%;
+}
+
+.login-title {
+  font-size: 7rem;
+}
+
+.input-email {
+  background: url(../../assets/icons/user.svg) no-repeat scroll 20px 50%;
+  background-color: white;
+  padding-left: 60px;
+}
+
+.input-password {
+  background: url(../../assets/icons/lock.svg) no-repeat scroll 20px 50%;
+  background-color: white;
+  padding-left: 60px;
+}
+
+.login-button {
+  font-size: 20px;
+  background-color: #4243fe;
+  border-color: whitesmoke;
+  color: white;
+}
+
+.knewave {
+  font-family: 'Knewave', cursive;
+}
+
+.text-orange {
+  color: #f0916e;
+}
+
+.bg-orange {
+  background-color: #f0916e;
+}
+
+.login-form-register {
+  position: relative;
+  overflow: hidden;
+}
+
+.login-form-register-bg {
+  border-radius: 100% 100% 0 0;
+  background-color: white;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: -60%;
+  z-index: 1;
+}
+
+.login-register-text {
+  z-index: 2;
+}
+
+.register-button {
+  border: none;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .login {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .login-title {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .login-form-container {
+    width: 100vw;
+    padding-right: 0;
+  }
+}
+
+/* ----------  Dashboard  ---------- */
+
+#dashboard {
+  font-family: 'Open Sans', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.nav-location > div {
+  font-size: 1rem;
+}
+
+.dash-nav i {
+  font-size: 1.25rem;
+  color: rgb(187, 185, 185);
+}
+
+.nav-user-icon {
+  border-left: 1px rgb(185, 185, 185) solid;
+}
+
+.nav-location {
+  grid-template-columns: auto 1fr;
+}
+
+.text-blue {
+  color: #4e50b8;
+}
+
+.bg-blue {
+  background-color: #4e50b8;
+}
+
+.dashboard-title {
+  font-size: 3.25vw;
+}
+
+.fa-heart {
+  color: red;
+}
+
+.dashboard-container {
+  grid-template-columns: 1fr 3.5fr;
+  height: 90vh;
+  background-color: whitesmoke;
+}
+
+.profile-card-top {
+  grid-template-columns: 1fr 2fr auto;
+}
+
+.profile-card-bottom {
+  grid-template-columns: 1fr 2fr;
+}
+
+.profile-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.fa-sliders-h {
+  font-size: 1rem;
+}
+
+.profile-status {
+  font-size: 0.75rem;
+}
+
+.dashboard-aside-left {
+  grid-template-rows: auto 1fr;
+}
+
+.dashboard-options-container {
+  height: 95%;
+}
+
+.dashboard-options > a {
+  font-size: 1rem;
+}
+
+.dashboard-options > div {
+  font-size: 1rem;
+}
+
+.dashboard-options > span {
+  font-size: 1rem;
+}
+
+.profile-card {
+  grid-template-rows: 1fr auto;
+}
+
+.premium-button {
+  background-color: #4e50b8 !important;
+  color: white !important;
+}
+
+.options-notification {
+  grid-template-columns: 1fr auto;
+}
+
+.dashboard-options {
+  grid-template-columns: 1fr 3fr;
+  color: #414464;
+}
+
+.dashboard-profile-container {
+  grid-template-columns: 2fr 1fr;
+  height: 88vh;
+  grid-template-areas:
+    'profile-swiper profile-details'
+    'profile-swiper profile-details';
+}
+
+.profile-swiper {
+  grid-area: profile-swiper;
+  grid-template-rows: 12.5% 87.5%;
+}
+
+.profile-details {
+  grid-area: profile-details;
+  grid-template-rows: 50px 1fr auto;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.fa-ellipsis-v {
+  font-size: 1.2rem;
+}
+
+.profile-swiper-previews {
+  grid-template-columns: 1fr 0.5fr repeat(7, 1fr);
+}
+
+.profiles-hero {
+  position: relative;
+}
+
+.profiles-hero-overlay {
+  position: absolute;
+}
+
+.gallery-arrows {
+  font-size: 1.5rem;
+  color: #414464;
+  background-color: rgba(255, 255, 255, 0.699);
+}
+
+.gallery-choice {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.distance-overlay {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: white;
+}
+
+.location-distance {
+  font-size: 2rem;
+}
+
+.location-unit {
+  font-size: 1rem;
+}
+
+.overlay-current-picture {
+  color: white;
+}
+
+.profile-detail {
+  font-size: 0.9rem;
+}
+
+.profile-detail-you-get {
+  font-size: 1.5rem;
+  color: #4e50b8;
+}
+
+.profile-subdetail {
+  font-size: 0.75rem;
+  color: #414464;
+  padding-top: 10px;
+}
+
+.filter-box {
+  grid-template-columns: 2fr 1fr;
+}
+
+.username-container {
+  height: 6rem;
+  grid-template-columns: 3fr 1fr;
+  border-bottom: 1px whitesmoke solid;
+}
+
+.profile-username {
+  font-size: 1.2rem;
+}
+
+.fa-galactic-senate {
+  font-size: 2.5rem;
+  color: purple;
+}
+
+.dash-promo {
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr;
+  -webkit-box-align: center;
+  align-items: center;
+  border: 1px purple solid;
+}
+
+.dash-promo > i {
+  font-size: 4vw;
+}
+
+.promo-text {
+  font-size: 1rem;
+}
+
+#promo-button {
+  color: white;
+}
+
+/* ----------  Dashboard Media Queries  ---------- */
+
+@media screen and (max-width: 1366px) {
+  .dashboard-container {
+    grid-template-columns: 1fr 3fr;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .dashboard-container {
+    grid-template-columns: 1fr;
+    height: auto;
+    padding: 0 !important;
+  }
+
+  #dashboard {
+    overflow-y: visible;
+  }
+
+  .dash-nav {
+    display: none;
+  }
+
+  .dashboard-aside-left {
+    display: none;
+  }
+
+  .dashboard-profile-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'profile-swiper profile-swiper'
+      'profile-details profile-details';
+    height: auto;
+    grid-template-rows: 1fr auto;
+  }
+
+  .profiles-hero {
+    height: 70vh !important;
+  }
+
+  .profile-swiper-previews {
+    display: none;
+  }
+
+  .p-2 {
+    padding: 0;
+  }
+
+  .profile-swiper {
+    grid-template-rows: auto;
+  }
+
+  .dash-promo > i {
+    font-size: 3.5rem;
+  }
+
+  .profile-details {
+    max-height: none;
+  }
+}
+
+/* ----------  Loader  ---------- */
+
+#loader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  overflow: visible;
+  background: #fff url('https://media.giphy.com/media/kXBVtKjLxINji/giphy.gif') no-repeat center center;
+}
+
+/* ----------  Messages  ---------- */
+
+.message-container {
+  height: 88vh;
+  grid-template-columns: 1.5fr 2fr;
+}
+
+.text-message-container {
+  height: 88vh;
+  grid-template-columns: 1.5fr 2fr;
+}
+
+.inbox-list-container {
+  overflow-y: auto;
+  grid-template-rows: repeat(13, 100px);
+}
+
+.text-inbox-list-container {
+  overflow-y: auto;
+  grid-template-rows: repeat(13, 100px);
+}
+
+.image-container-inbox {
+  overflow: hidden;
+}
+
+.inbox-list {
+  grid-template-columns: 1fr 3fr;
+  border-radius: 10px;
+  color: black;
+}
+
+.inbox-list img {
+  padding: 1rem;
+}
+
+.inbox-search {
+  height: 100px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  font-size: 1.2rem;
+  grid-template-columns: 1fr auto;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.mobile-nav i {
+  font-size: 1.25rem;
+  color: rgb(187, 185, 185);
+}
+
+.mobile-nav span {
+  font-size: 1.5rem;
+}
+
+.text-mobile-nav {
+  display: none;
+}
+
+.text-mobile-nav i {
+  font-size: 1.25rem;
+  color: rgb(187, 185, 185);
+}
+
+.text-mobile-nav span {
+  font-size: 1.5rem;
+}
+
+.inbox-list:hover {
+  color: black;
+}
+
+.inbox-username {
+  font-weight: bold;
+}
+
+.inbox-time {
+  font-size: 0.75rem;
+}
+
+.inbox-list-message-preview {
+  font-size: 0.8rem;
+  color: #414464;
+}
+
+.compose-icon-inbox {
+  background-color: blue;
+  padding: 0.5rem 0.5rem 0.75rem 0.75rem;
+  display: grid;
+  color: white;
+  border-radius: 5px;
+}
+
+.text-container {
+  overflow-y: auto;
+}
+
+.text-text-container {
+  overflow-y: auto;
+}
+
+.text-header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 70px;
+  border-bottom: 1px rgba(189, 189, 189, 0.384) solid;
+}
+
+.text-header i {
+  font-size: 1.5rem;
+}
+
+.text-header span {
+  font-size: 1.25rem;
+}
+
+.text-header-sm {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 70px;
+  border-bottom: 1px rgba(189, 189, 189, 0.384) solid;
+  display: none;
+}
+
+.text-header-sm i {
+  font-size: 1.5rem;
+}
+
+.text-header-sm span {
+  font-size: 1.25rem;
+}
+
+.input-message {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  height: 70px;
+  grid-template-columns: 5fr 1fr;
+}
+
+.incoming-message {
+  grid-template-columns: 1fr 6fr;
+}
+
+.incoming-message img {
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+}
+
+.outgoing-message {
+  grid-template-columns: 6fr 1fr;
+}
+
+.outgoing-message img {
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+}
+
+.message-box {
+  max-width: 60%;
+  padding: 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+.in-text {
+  background-color: #eceef0;
+}
+
+.out-text {
+  background-color: #e2e3f5;
+}
+
+.input-message-input {
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+.input-message-button {
+  justify-self: center;
+  align-self: center;
+  font-size: 1.25rem;
+}
+
+/* ----------  Media Queries for Messages  ---------- */
+
+@media screen and (max-width: 1024px) {
+  .mobile-nav {
+    display: grid;
+    height: 10vh;
+  }
+
+  .text-mobile-nav {
+    display: grid;
+    height: 10vh;
+  }
+
+  .message-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .text-message-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .text-container {
+    display: none;
+  }
+
+  .message-container {
+    grid-template-columns: 1fr;
+  }
+
+  .text-message-container {
+    grid-template-columns: 1fr;
+    height: 98vh;
+  }
+
+  .text-inbox-list-container {
+    display: none;
+  }
+
+  .text-mobile-nav {
+    display: none;
+  }
+
+  .text-header {
+    display: none;
+  }
+
+  .text-header-sm {
+    display: grid;
+  }
+}

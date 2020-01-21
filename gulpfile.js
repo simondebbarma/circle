@@ -10,7 +10,7 @@ gulp.task('styles', () => {
 });
 
 gulp.task('prefixer', () => {
-    return gulp.src('css/main.css')
+    return gulp.src('css/*.css')
         .pipe(autoprefixer({
             cascade: false
         }).on('error', sass.logError))
@@ -19,7 +19,7 @@ gulp.task('prefixer', () => {
 
 gulp.task('clean', () => {
     return del([
-        'css/main.css',
+        'css/*.css',
     ]);
 });
 
