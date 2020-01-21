@@ -27,7 +27,7 @@
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://simonpeterdebbarma.github.io/circle/)
 
 ---
 
@@ -62,6 +62,10 @@
 ### Autofix CSS Linting Errors
 
 `stylelint "*/**.css" --fix`
+
+### Prefix CSS
+
+`gulp prefixer`
 
 ### Deployment
 
